@@ -18,6 +18,7 @@ Repository to store some resumes from classes from [DIO](https://web.dio.me/cour
 |Unmaking changes in the local repository|[Video Class](https://web.dio.me/course/versionamento-de-codigo-com-git-e-github/learning/3f9f2336-6fd5-44cb-ba39-d1a4f6448023?back=/track/potencia-tech-ifood-desenvolvimento-de-jogos&tab=undefined&moduleId=undefined)|
 |Sending and downloading changes with the remote repository|[Video Class](https://web.dio.me/course/versionamento-de-codigo-com-git-e-github/learning/dd17c56e-2327-493c-942a-358a49a26549?back=/track/potencia-tech-ifood-desenvolvimento-de-jogos&tab=undefined&moduleId=undefined)|
 |Working with branches pt.1|[Video Class](https://web.dio.me/course/versionamento-de-codigo-com-git-e-github/learning/2c7fd2b1-e7c4-4947-9b07-ffcbfb4bd689?back=/track/potencia-tech-ifood-desenvolvimento-de-jogos&tab=undefined&moduleId=undefined)|
+|Working with branches pt.2|[Video Class](https://web.dio.me/course/versionamento-de-codigo-com-git-e-github/learning/80018fab-daac-4917-8527-a6be2e0c3cf0?back=/track/potencia-tech-ifood-desenvolvimento-de-jogos&tab=undefined&moduleId=undefined)|
 
 
 
@@ -84,11 +85,13 @@ git clone [local]
 ```
 Clones a remote repository to a local repository
 
-To change the name of the cloned repository use:
+---
 
 ```
 git clone [local] [name]
 ```
+
+Changes the name of the cloned repository
 
 ---
 ```
@@ -200,13 +203,108 @@ git restore [name]
 Recovers the last saved files/data from the commits
 
 ---
+### git checkout
 
+```
+git checkout -b [name]
+```
+
+Leaves from the current branch, creating another one with the name specified
+
+```
+git checkout [name]
+```
+
+Trade from the current branch to the specified one
+
+---
 ### git branch
+
+```
+git branch 
+```
+Lists the branches in the repository
+
+---
 
 ```
 git branch -M [name]
 ```
 Changes the name of the main Branch of the project
+
+---
+
+```
+git branch -v
+```
+Show the last commit from each branch
+
+---
+```
+git branch -d [name]
+```
+Deletes a branch from the repository
+
+---
+
+### git fetch
+
+```
+git fetch origin [branch]
+```
+
+Downloads the changes in the remote repository without merge them automatically int the local repository
+
+---
+
+### git diff
+
+```
+git diff [branch1] [branch2]
+```
+
+Shows the differences between the two selected branches
+
+---
+
+### git stash
+
+```
+git stash
+```
+
+Arquive a change made on a branch
+
+---
+
+```
+git stash list
+```
+
+Lists the arquived changes
+
+---
+
+```
+git stash pop
+```
+
+Brings back the marquived change and exclude the most recent change
+
+---
+
+```
+git stash apply
+```
+
+Mantains the change on the list to a later use of it
+
+### git merge
+
+```
+git merge [name]
+```
+Specifies wich branch will be merged with the current branch
 
 ---
 
