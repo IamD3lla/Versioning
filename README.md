@@ -242,6 +242,8 @@ git pull
 
 Gets the code from the remote repository to the local repository
 
+---
+
 ## ❌ Gitignore
 
 To have a file ignored by git, its necessary to add the path to the file in Gitignore
