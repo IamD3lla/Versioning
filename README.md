@@ -65,6 +65,9 @@ Deletes a wrong initialized repository
 ###### Here are some useful commands to use to version the code:
 
 ---
+
+### git init
+
 ```
 git init
 ```
@@ -72,6 +75,8 @@ git init
 Inicializes a repository in the local file
 
 ---
+
+### git clone
 
 ```
 git clone [local]
@@ -93,12 +98,16 @@ Clones a specific branch from the remote repository
 
 ---
 
+### git status
+
 ```
 git status
 ```
 Prints the status of your files, if they are commiteds or not, altered or not in the selected branch
 
 ---
+
+### git log
 
 ```
 git log
@@ -107,6 +116,8 @@ git log
 Shows the lasts commits
 
 ---
+
+### git add
 
 ```
 git add [file name]
@@ -119,6 +130,8 @@ To add all the files to the commit,is necessary to use the command:
 git add .
 ```
 ---
+
+### git commit
 
 ``` 
 git commit -m "[message]"
@@ -135,6 +148,8 @@ git commit --amend -m "[new message]"
 Changes a message from the last commit
 
 ---
+
+### git reset
 
 ``` 
 git reset [name]
@@ -175,6 +190,8 @@ Ignores the files from the previous commit, deleting them
 
 ---
 
+### git restore
+
 ``` 
 git restore [name]
 ```
@@ -183,12 +200,16 @@ Recovers the last saved files/data from the commits
 
 ---
 
+### git branch
+
 ```
 git branch -M [name]
 ```
 Changes the name of the main Branch of the project
 
 ---
+
+### git remote
 
 ```
 git remote add origin [local]
@@ -202,6 +223,8 @@ git remote -v
 Show the linked repository
 
 ---
+
+### git push
 
 ```
 git push -u origin main
